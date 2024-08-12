@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="invoice.css">
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class=",">
+            <h1>BIILING DETAILS</h1>
+
+            <form class="billdata">
+                <div>
+                    <label for="form-label">item</label>
+                    <input type="text" placeholder="Enter the item name" id="item">
+                </div>
+
+                <div>
+                    <label for="form-label"> Quantity:</label>
+                    <input type="text" placeholder="Number of items" id="qtn">
+                </div>
+                <div>
+                    <label for="form-label"> Price of item</label>
+                    <input type="text" placeholder="gst amount" id="upi">
+                </div>
+                <div>
+                    <label for="form-label">Inovoice number</label>
+                    <input type="number" placeholder="enter number " id="invoice-num">
+                </div>
+                <div>
+                    <label for="form-label">Date</label>
+                    <input type="date" placeholder="enter the date" id="date">
+                    <br><br>
+                    <div>
+                        <label for="form-label"> Name</label>
+                        <input type="text" placeholder="Enter the name" id="name">
+                    </div>
+                    <div>
+                        <label for="form-label"> Phone Number</label>
+                        <input type="number" placeholder="Enter phone number" id="number">
+                    </div>
+                    <div>
+                        <label for="form-label"> Address</label>
+                        <input type="text" placeholder="Enter address" id="adrs">
+                    </div>
+                    <div>
+                        <button type="submit" class="btn">Submit</button>
+                    </div>
+            </form>
+        </div>
+        <div class="invoice-section">
+            <div class="box1">
+                <div class="head-invoice">
+                    <h1>Invoice</h1>
+                    <div class="sub">
+                        <h4 class="in">invoice number</h4>
+                        <p id="i1"></p>
+                        <h4 class="in">Date of issue</h4>
+                        <p id="i2"></p>
+                    </div>
+                </div>
+                <div class="logo">
+                    <img src="assests/jklogooo.jpg" alt=""> </div>
+             </div>
+             <div class="box2">
+                    <div class="client">
+                        <h3>Customer details</h3>
+                        <p id="i3"></p>
+                        <p id="i4"></p>
+                        <p id="i5"></p>
+                    </div>
+                    <div class="company">
+                        <h3>JK-fashion</h3>
+                        <h4>Hanuman nagar,<br>kondapur road <br>beside,Harsha Toyata<br>Pincode:500085</h4>
+                    </div>
+             </div>
+            <div class="box3">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>S.NO</th>
+                                <th>ITEMS</th>
+                                <th>QNTY</th>
+                                <th>PRICE/UNIT</th>
+                                <th>GST</th>
+                                <th>TOTAL</th>                                                             
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="bill-amnt">
+
+                                <td id='d0'></td>
+                                <td id="d1"></td>
+                                <td id="d2"></td>
+                                <td id="d3"></td>
+                                <td id="d4"></td>
+                                <td id="d5"></td>
+                            </tr>
+                            <tr id="billing">
+                                <td colspan="4" rowspan="4"></td>
+                                <td>TOTAL SUM</td>
+                                <td id="t1"></td>
+                            </tr>
+                            <tr id="billing">
+
+                                <td>DISCOUNT</td>
+                                <td id="t2"></td>
+                            </tr>
+                            <tr id="billing">
+
+                                <td>TAX</td>
+                                <td id="t3"></td>
+                            </tr>
+                            <tr id="billing">
+                                <td>AMNT TO PAY</td>
+                                <td id="t4"></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <h2 class="endtag">Thank you for visiting, visit again</h2>
+        </div>
+         </div>
+            <div class="button-ds">
+                <button class="downloadbtn"><img src="assests/downloadicon.jpg" alt="">Download</button>
+                <button class="save"><img src="assests/save-icon-png-3.png" alt="">Save </button>
+            </div>
+   </div>
+
+
+   <!-- JS Link  -->
+        <script src="app.js">
+
+        </script>
+
+    <!-- Include the html2pdf library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+
+
+</body>
+
+</html>
